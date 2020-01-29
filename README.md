@@ -5,4 +5,13 @@ Ansible role to install the ranger file manager on linux. ranger is a console fi
 
 ```
 [WORK-IN-PROGRESS]
+
+done:
+- support for archlinux, centos + debian
+
+
+missing:
+- travis && docker checks
+- ansible galaxy support
+- better readme
 ```
