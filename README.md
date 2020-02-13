@@ -1,7 +1,7 @@
+[![MIT License](https://github.com/chaos-bodensee/role-ranger/blob/master/.github/license.svg)](https://github.com/chaos-bodensee/role-ranger/blob/master/LICENSE)
+[![Ansible Lint check](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20Lint%20check/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+Lint+check%22)
  role-ranger
 ==============
-[![MIT License](https://github.com/chaos-bodensee/role-ranger/blob/master/.github/license.svg)](https://github.com/chaos-bodensee/role-ranger/blob/master/LICENSE)
-
 
 Ansible role to install the ranger file manager on linux. ranger is a console file manager with VI key bindings. More info about ranger is available at [github.com/ranger/ranger](https://github.com/ranger/ranger.git).
 
