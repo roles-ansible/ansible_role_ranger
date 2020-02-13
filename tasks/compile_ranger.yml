@@ -2,7 +2,7 @@
 - name: download ranger git repo
   git:
     repo: "{{ ranger_repo }}"
-    dest: "{{ ranger_download_directory }}" 
+    dest: "{{ ranger_download_directory }}"
     version: "{{ ranger_branch }}"
 
 - name: install build packages
