@@ -17,9 +17,35 @@ We also perform a versioncheck that will check if a newer version of this role h
 You can either use this role via ansible galaxy or use it directly from [this](https://github.com/chaos-bodensee/role-ansible_version.git) git repository.
 
 ### ansible galaxy
-```
-# install role
+
+Ansible-Rolle Instalieren:
+```bash
 ansible-galaxy install do1jlr.ranger
+```
+
+Example Ansible-Playbook:
+```yml
+---
+- hosts: localhost
+  roles:
+  - do1jlr.ranger
+```
+
+### direkt anbinden
+
+Ansible-Rolle clonen:
+```bash
+git clone https://github.com/chaos-bodensee/role-ranger.git
+```
+
+Example Playbook:
+```yaml
+---
+- hosts: localhost
+  roles:
+    - role-ranger
+  tags:
+   - ranger
 ```
 
 
@@ -28,10 +54,10 @@ ansible-galaxy install do1jlr.ranger
 
 done:
 - support for archlinux, centos + debian
+- ansible galaxy support
+- better readme
 
 
 missing:
-- travis && docker checks
-- ansible galaxy support
-- better readme
+- travis && docker / actions checks
 ```
