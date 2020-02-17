@@ -3,4 +3,4 @@ submodules_versioncheck: true
 
 ranger_repo: 'https://github.com/ranger/ranger.git'
 ranger_branch: 'master'
-ranger_download_directory: "{{ x_ansible_download_dir | default(ansible_env.HOME + '/.ansible/tmp/downloads/ranger') }}"
+ranger_download_directory: "{{ x_ansible_download_dir | default(ansible_env.HOME + '/.ansible/tmp/downloads/ranger') | default('/tmp/downloads/ranger') }}"
