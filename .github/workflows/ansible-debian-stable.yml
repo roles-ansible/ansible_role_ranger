@@ -1,0 +1,22 @@
+name: Ansible check debian:stable  # feel free to pick your own name
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Important: This sets up your GITHUB_WORKSPACE environment variable
+    - uses: actions/checkout@v2
+
+    - name: ansible check with debian:stable
+      # replace "master" with any valid ref
+      uses: ansible/check-ansible-debian-stable-action@master
+      with:
+        # [required]
+        # Paths to your ansible role you want to test
+        # For Example:
+        # targets: "role/my_role/"
+        targets: "./"
