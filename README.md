@@ -1,6 +1,6 @@
-[![Ansible Galaxy](https://github.com/chaos-bodensee/role-ranger/blob/master/.github/galaxy.svg)](https://galaxy.ansible.com/do1jlr/ranger)
+[![Ansible Galaxy](https://raw.githubusercontent.com/chaos-bodensee/role-ranger/master/.github/galaxy.svg?sanitize=true)](https://galaxy.ansible.com/do1jlr/ranger)
 [![Ansible Lint check](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20Lint%20check/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+Lint+check%22)
-[![MIT License](https://github.com/chaos-bodensee/role-ranger/blob/master/.github/license.svg)](https://github.com/chaos-bodensee/role-ranger/blob/master/LICENSE)
+[![MIT License](https://raw.githubusercontent.com/chaos-bodensee/role-ranger/master/.github/license.svg?sanitize=true)](https://github.com/chaos-bodensee/role-ranger/blob/master/LICENSE)
 
  role-ranger
 ==============
