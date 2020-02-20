@@ -22,7 +22,7 @@ You can either use this role via ansible galaxy or use it directly from [this](h
 
 ### ansible galaxy
 
-Ansible-Rolle Instalieren:
+Ansible-Rolle Installieren:
 ```bash
 ansible-galaxy install do1jlr.ranger
 ```
@@ -59,9 +59,7 @@ Example Playbook:
 done:
 - support for archlinux, centos + debian
 - ansible galaxy support
-- better readme
 
-
-missing:
+started:
 - travis && docker / actions checks
 ```
