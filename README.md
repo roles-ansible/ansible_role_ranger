@@ -1,4 +1,5 @@
 [![Ansible Galaxy](https://raw.githubusercontent.com/chaos-bodensee/role-ranger/master/.github/galaxy.svg?sanitize=true)](https://galaxy.ansible.com/do1jlr/ranger)
+[![Build Status](https://travis-ci.org/chaos-bodensee/role-ranger.svg?branch=master)](https://travis-ci.org/chaos-bodensee/role-ranger)
 [![Ansible Lint check](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20Lint%20check/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+Lint+check%22)
 [![Ansible check debian:stable](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20check%20debian:stable/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+check+debian%3Astable%22)
 [![Ansible check debian:stable](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20check%20debian:buster/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+check+debian%3Abuster%22)
