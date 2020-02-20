@@ -1,4 +1,4 @@
-name: Ansible check debian:stable
+name: Ansible check debian:buster
 
 on: [push, pull_request]
 
@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: ansible check with debian:stable
-      uses: roles-ansible/check-ansible-debian-stable-action@master
+    - name: ansible check with debian:buster
+      uses: roles-ansible/check-ansible-debian-buster-action@master
       with:
         targets: "./"
