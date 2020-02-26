@@ -16,7 +16,7 @@ Ansible role to install the ranger file manager on linux. ranger is a console fi
 -------------
 First we try to install ``ranger`` with the default package manager.
 If this fails, we download the ranger git and compile it by ourself *(with python 3)*.<br/>
-We also perform a versioncheck that will check if a newer version of this role has been executed on this host before. You can disable it by setting ``ansible_versionscheck`` to `` false``
+We also could perform a simple versioncheck that will check if a newer version of this role has been executed on this host before. You can enable it by setting ``submodules_versioncheck`` to ``true``
 
  How to use this role
 -------------
@@ -52,6 +52,8 @@ Example Playbook:
     - role-ranger
   tags:
    - ranger
+  vars:
+    submodules_versioncheck: true
 ```
 
 
