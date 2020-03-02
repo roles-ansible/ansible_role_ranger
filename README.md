@@ -6,6 +6,7 @@
 [![Ansible check debian:sid](https://github.com/chaos-bodensee/role-ranger/workflows/Ansible%20check%20debian:sid/badge.svg)](https://github.com/chaos-bodensee/role-ranger/actions?query=workflow%3A%22Ansible+check+debian%3Asid%22)
 [![MIT License](https://raw.githubusercontent.com/chaos-bodensee/role-ranger/master/.github/license.svg?sanitize=true)](https://github.com/chaos-bodensee/role-ranger/blob/master/LICENSE)
 
+
  role-ranger
 ==============
 
