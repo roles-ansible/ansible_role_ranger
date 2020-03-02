@@ -1,4 +1,8 @@
 ---
+- name: combine ranger configuration
+  set_fact:
+    ranger: "{{ _ranger|combine(ranger, recursive=True) }}"
+
 - include_tasks: versioncheck.yml
   when: submodules_versioncheck|bool
 
