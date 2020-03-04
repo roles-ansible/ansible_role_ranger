@@ -51,7 +51,8 @@ Example Playbook:
     submodules_versioncheck: true
 ```
 
-### Testing
+ Testing
+----------
 This role is tested with [these github-action](https://github.com/search?q=topic%3Acentos+topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of centos. Linting is tested via travis-ci.
 If you want to find out more about our tests, please have a look at the github marketplace.
 
@@ -71,3 +72,16 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Ansible check ubuntu:focal](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:focal/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Afocal%22) | [ansible test with ubuntu focal](https://github.com/marketplace/actions/check-ansible-ubuntu-focal) |
 | [![Ansible check ubuntu:trusty](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:trusty/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Atrusty%22) | [ansible test with ubuntu trusty](https://github.com/marketplace/actions/check-ansible-ubuntu-trusty) |
 | [![Ansible check ubuntu:xenial](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:xenial/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Axenial%22) | [ansible test with ubuntu xenial](https://github.com/marketplace/actions/check-ansible-ubuntu-xenial) |
+
+ variables
+-------
+```yaml
+# perform simple versionscheck (true is recomended)
+submodules_versioncheck: false
+
+# infos for ranger installation
+ranger:
+  repo: 'https://github.com/ranger/ranger.git'
+  branch: 'master'
+  download_directory: "{{ x_ansible_download_dir | default('~/.ansible/tmp/downloads/ranger') }}"
+```
