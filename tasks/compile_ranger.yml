@@ -26,6 +26,8 @@
   package:
     name: python3
     state: present
+  register: install_python3
+  ignore_errors: yes
 
 - name: install ranger with python3
   become: yes
@@ -33,3 +35,12 @@
   args:
     chdir: "{{ ranger_download_directory }}"
     creates: '/usr/local/bin/ranger'
+  when: not install_python3.failed
+
+- name: install ranger with legacy-python
+  become: yes
+  command: python setup.py install --optimize=1
+  args:
+    chdir: "{{ ranger_download_directory }}"
+    creates: '/usr/local/bin/ranger'
+  when: install_python3.failed
