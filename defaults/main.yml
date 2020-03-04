@@ -1,6 +1,9 @@
 ---
-submodules_versioncheck: true
+# should we do a version check? (recomended)
+submodules_versioncheck: false
 
-ranger_repo: 'https://github.com/ranger/ranger.git'
-ranger_branch: 'master'
-ranger_download_directory: "{{ x_ansible_download_dir | default('~/.ansible/tmp/downloads/ranger') }}"
+# variables for ranger
+ranger:
+  repo: 'https://github.com/ranger/ranger.git'
+  branch: 'master'
+  download_directory: "{{ x_ansible_download_dir | default('~/.ansible/tmp/downloads/ranger') }}"

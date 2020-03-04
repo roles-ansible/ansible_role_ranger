@@ -20,7 +20,10 @@ install:
 script:
   - ansible-galaxy install do1jlr.ranger
   - ansible-lint .
-  - echo -e "\n\n\n\n\nWe use github actions for more detailed tests.\n\nMore details about that in our github repo at:\nhttps://github.com/chaos-bodensee/role-ranger/actions\n\n\n\n\n\n"
+  - echo -e "\n\n\n\n\nWe use github actions for more detailed tests.\n\nMore details about that in our github repo at:\nhttps://github.com/roles-ansible/role-ranger/actions\n\n\n\n\n\n"
 
 notifications:
+  email:
+    on_success: never
+    on_failure: always
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
