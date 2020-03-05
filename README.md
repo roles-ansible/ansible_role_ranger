@@ -53,7 +53,7 @@ Example Playbook:
 
  Testing
 ----------
-This role is tested with [these github-action](https://github.com/search?q=topic%3Acentos+topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of centos. Linting is tested via travis-ci.
+This role is tested with [these github-action](https://github.com/search?q=topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of differen linux systems. Linting is tested via travis-ci.
 If you want to find out more about our tests, please have a look at the github marketplace.
 
 | test status | Github Marketplace |
@@ -61,11 +61,12 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Travis Build Status](https://travis-ci.org/roles-ansible/role_ranger.svg?branch=master)](https://travis-ci.org/roles-ansible/role_ranger) | [.travis.yml](https://github.com/roles-ansible/role_ranger/blob/master/.travis.yml) |
 | [![Ansible Lint check](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20Lint%20check/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+Lint+check%22) | [ansible-lint action](https://github.com/marketplace/actions/ansible-lint)
 | [![Ansible check debian:stable](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:stable/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Astable%22) | [ansible test with debian stable](https://github.com/marketplace/actions/check-ansible-debian-stable) |
-| [![Ansible check debian:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Alatest%22) | [ansible test with debian stable](https://github.com/marketplace/actions/check-ansible-debian-latest) |
+| [![Ansible check debian:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Alatest%22) | [ansible test with debian latest](https://github.com/marketplace/actions/check-ansible-debian-latest) |
 | [![Ansible check debian:sid](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:sid/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Asid%22) | [ansible test with debian sid](https://github.com/marketplace/actions/check-ansible-debian-sid) |
 | [![Ansible check debian:buster](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:buster/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Abuster%22) | [ansible test with debian buster](https://github.com/marketplace/actions/check-ansible-debian-buster) |
 | [![Ansible check debian:jessie](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:jessie/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Ajessie%22) | [ansible test with debian jessie](https://github.com/marketplace/actions/check-ansible-debian-jessie) |
 | [![Ansible check debian:stretch](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:stretch/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Astretch%22) | [ansible test with debian stretch](https://github.com/marketplace/actions/check-ansible-debian-stretch) |
+| | |
 | [![Ansible check ubuntu:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Alatest%22) | [ansible test with ubuntu latest](https://github.com/marketplace/actions/check-ansible-ubuntu-latest) |
 | [![Ansible check ubuntu:bionic](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:bionic/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Abionic%22) | [ansible test with ubuntu bionic](https://github.com/marketplace/actions/check-ansible-ubuntu-bionic) |
 | [![Ansible check ubuntu:disco](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:disco/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Adisco%22) | [ansible test with ubuntu disco](https://github.com/marketplace/actions/check-ansible-ubuntu-disco) |
@@ -73,6 +74,9 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Ansible check ubuntu:focal](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:focal/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Afocal%22) | [ansible test with ubuntu focal](https://github.com/marketplace/actions/check-ansible-ubuntu-focal) |
 | [![Ansible check ubuntu:trusty](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:trusty/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Atrusty%22) | [ansible test with ubuntu trusty](https://github.com/marketplace/actions/check-ansible-ubuntu-trusty) |
 | [![Ansible check ubuntu:xenial](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:xenial/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Axenial%22) | [ansible test with ubuntu xenial](https://github.com/marketplace/actions/check-ansible-ubuntu-xenial) |
+| | |      
+| [![Ansible check fedora:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3Alatest%22) | [ansible test with fedora latest](https://github.com/marketplace/actions/check-ansible-fedora-latest) |
+
 
  variables
 -------
