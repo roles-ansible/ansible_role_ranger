@@ -1,10 +1,10 @@
 ---
 # versionscheck
-playbook_version_number: 1025 # should be over ninethousand
-playbook_version_path: 'role-ranger_roles-ansible_github.com.version' 
+playbook_version_number: 1026 # should be over ninethousand
+playbook_version_path: 'role-ranger_roles-ansible_github.com.version'
 
 # variables for ranger
 _ranger:
   repo: 'https://github.com/ranger/ranger.git'
   branch: 'master'
-  download_directory: "{{ x_ansible_download_dir | default('~/.ansible/tmp/downloads/ranger') }}"
+  download_directory: "{{ x_ansible_download_dir | default(ansible_env.HOME + '/.ansible/tmp/downloads/ranger') }}"
