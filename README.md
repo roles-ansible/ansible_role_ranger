@@ -88,5 +88,5 @@ submodules_versioncheck: false
 ranger:
   repo: 'https://github.com/ranger/ranger.git'
   branch: 'master'
-  download_directory: "{{ x_ansible_download_dir | default('~/.ansible/tmp/downloads/ranger') }}"
+  download_directory: "{{ x_ansible_download_dir | default(ansible_env.HOME + '/.ansible/tmp/downloads/ranger') }}"
 ```
