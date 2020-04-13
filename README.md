@@ -9,9 +9,10 @@ Ansible role to install the ranger file manager on linux. ranger is a console fi
 
  What does this role do?
 -------------
-First we try to install ``ranger`` with the default package manager.
-If this fails, we download the ranger git and compile it by ourself *(with python 3)*.<br/>
-We also could perform a simple versioncheck that will check if a newer version of this role has been executed on this host before. You can enable it by setting ``submodules_versioncheck`` to ``true``
++ This role try to install ``ranger`` with the default package manager.
++ If this fails, this role will download the ranger git and compile it by ourself *(with python 3)*.
++ We also could perform a simple versioncheck that will check if a newer version of this role has been executed on this host before.
+  - You can enable it by setting ``submodules_versioncheck`` to ``true``
 
  How to use this role
 -------------
@@ -19,7 +20,7 @@ You can either use this role via ansible galaxy or use it directly from [this](h
 
 ### ansible galaxy
 
-Ansible-Rolle Installieren:
+install role:
 ```bash
 ansible-galaxy install do1jlr.ranger
 ```
@@ -32,14 +33,20 @@ Example Ansible-Playbook:
   - do1jlr.ranger
 ```
 
-### direkt anbinden
+You can execute the role directly via ansible ad-hoc commands, but it is highly recomended to create a ansible playbook
+```bash
+# example ad-hoc command
+ansible -m include_role -a "name=do1jlr.ranger" localhost
+```
 
-Ansible-Rolle clonen:
+### use directly
+
+clone github repo:
 ```bash
 git clone https://github.com/roles-ansible/role_ranger.git
 ```
 
-Example Playbook:
+example Playbook:
 ```yaml
 ---
 - hosts: localhost
@@ -59,6 +66,7 @@ If you want to find out more about our tests, please have a look at the github m
 | test status | Github Marketplace |
 | :---------  | :----------------  |
 | [![Travis Build Status](https://travis-ci.org/roles-ansible/role_ranger.svg?branch=master)](https://travis-ci.org/roles-ansible/role_ranger) | [.travis.yml](https://github.com/roles-ansible/role_ranger/blob/master/.travis.yml) |
+|||
 | [![Ansible Lint check](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20Lint%20check/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+Lint+check%22) | [ansible-lint action](https://github.com/marketplace/actions/ansible-lint)
 | [![Ansible check debian:stable](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:stable/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Astable%22) | [ansible test with debian stable](https://github.com/marketplace/actions/check-ansible-debian-stable) |
 | [![Ansible check debian:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Alatest%22) | [ansible test with debian latest](https://github.com/marketplace/actions/check-ansible-debian-latest) |
