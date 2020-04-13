@@ -75,6 +75,8 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Ansible check debian:jessie](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:jessie/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Ajessie%22) | [ansible test with debian jessie](https://github.com/marketplace/actions/check-ansible-debian-jessie) |
 | [![Ansible check debian:stretch](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20debian:stretch/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+debian%3Astretch%22) | [ansible test with debian stretch](https://github.com/marketplace/actions/check-ansible-debian-stretch) |
 | | |
+| [![Ansible check archlinux:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20archlinux:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+archlinux%3Alatest%22) | [ansible test with archlinux latest](https://github.com/marketplace/actions/check-ansible-archlinux-latest) |
+| | |
 | [![Ansible check ubuntu:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Alatest%22) | [ansible test with ubuntu latest](https://github.com/marketplace/actions/check-ansible-ubuntu-latest) |
 | [![Ansible check ubuntu:bionic](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:bionic/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Abionic%22) | [ansible test with ubuntu bionic](https://github.com/marketplace/actions/check-ansible-ubuntu-bionic) |
 | [![Ansible check ubuntu:disco](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20ubuntu:disco/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+ubuntu%3Adisco%22) | [ansible test with ubuntu disco](https://github.com/marketplace/actions/check-ansible-ubuntu-disco) |
@@ -94,7 +96,7 @@ If you want to find out more about our tests, please have a look at the github m
 # perform simple versionscheck (true is recomended)
 submodules_versioncheck: false
 
-# infos for ranger installation
+# parameter for ranger installation
 ranger:
   repo: 'https://github.com/ranger/ranger.git'
   branch: 'master'
