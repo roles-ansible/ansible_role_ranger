@@ -25,8 +25,8 @@ galaxy_info:
     - name: Fedora
       versions:
         - 31
-        - 32
-        - 33
+#        - 32
+#        - 33
     - name: EL
       versions:
         - 8
