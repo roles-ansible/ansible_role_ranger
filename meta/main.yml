@@ -11,16 +11,27 @@ galaxy_info:
       versions: all
     - name: Debian
       versions:
-        - all
+        - sid
+        - buster
+        - jessie
+        - stretch
     - name: Ubuntu
       versions:
-        - all
+        - xenial
+        - trusty
+        - eoan
+        - disco
+        - bionic
     - name: Fedora
       versions:
-        - all
+        - 31
+        - 32
+        - 33
     - name: EL
       versions:
-        - all
+        - 8
+        - 7
+        - 6
   galaxy_tags:
     - ranger
     - filemanager
