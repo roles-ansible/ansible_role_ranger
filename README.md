@@ -88,6 +88,8 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Ansible check fedora:33](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:33/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A33%22) | [ansible test with fedora 33](https://github.com/marketplace/actions/check-ansible-fedora-33) |
 | [![Ansible check fedora:32](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:32/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A32%22) | [ansible test with fedora 32](https://github.com/marketplace/actions/check-ansible-fedora-32) |
 | [![Ansible check fedora:31](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:31/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A31%22) | [ansible test with fedora 31](https://github.com/marketplace/actions/check-ansible-fedora-31) |
+| | |
+| [![Ansible check alpine:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20alpine:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+alpine%3Alatest%22) | [ansible test with alpine latest](https://github.com/marketplace/actions/check-ansible-alpine-latest) |
 
 
  variables
