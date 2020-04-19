@@ -1,4 +1,4 @@
-name: Ansible check archlinux:latest
+name: Ansible check alpine:latest
 
 on: [push, pull_request]
 
