@@ -60,7 +60,7 @@ example Playbook:
 
  Testing
 ----------
-This role is tested with [these github-action](https://github.com/search?q=topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of differen linux systems. Linting is tested via travis-ci.
+This role is tested with [these github-action](https://github.com/search?q=topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of differen linux systems. Linting is tested via travis-ci and the  [ansible-lint action](https://github.com/marketplace/actions/ansible-lint).
 If you want to find out more about our tests, please have a look at the github marketplace.
 
 | test status | Github Marketplace |
@@ -87,6 +87,10 @@ If you want to find out more about our tests, please have a look at the github m
 | [![Ansible check fedora:33](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:33/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A33%22) | [ansible test with fedora 33](https://github.com/marketplace/actions/check-ansible-fedora-33) |
 | [![Ansible check fedora:32](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:32/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A32%22) | [ansible test with fedora 32](https://github.com/marketplace/actions/check-ansible-fedora-32) |
 | [![Ansible check fedora:31](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20fedora:31/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+fedora%3A31%22) | [ansible test with fedora 31](https://github.com/marketplace/actions/check-ansible-fedora-31) |
+| | |
+| [![Ansible check centos:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20centos:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+centos%3Alatest%22) | [ansible test with centos latest](https://github.com/marketplace/actions/check-ansible-centos-latest) |
+| [![Ansible check centos:centos8](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20centos:centos8/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+centos%3Acentos8%22) | [ansible test with centos centos8](https://github.com/marketplace/actions/check-ansible-centos-centos8) |
+| [![Ansible check centos:centos7](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20centos:centos7/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+centos%3Acentos7%22) | [ansible test with centos centos7](https://github.com/marketplace/actions/check-ansible-centos-centos7) |
 | | |
 | [![Ansible check alpine:latest](https://github.com/roles-ansible/role_ranger/workflows/Ansible%20check%20alpine:latest/badge.svg)](https://github.com/roles-ansible/role_ranger/actions?query=workflow%3A%22Ansible+check+alpine%3Alatest%22) | [ansible test with alpine latest](https://github.com/marketplace/actions/check-ansible-alpine-latest) |
 
