@@ -37,6 +37,15 @@
     creates: '/usr/local/bin/ranger'
   when: not install_python3.failed
 
+- name: install legacy-python f00
+  become: true
+  package:
+    name:
+      - python
+      - python-setuptools
+    state: present
+  when: install_python3.failed
+
 - name: install ranger with legacy-python
   become: yes
   command: python setup.py install --optimize=1
