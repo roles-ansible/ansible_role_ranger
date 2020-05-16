@@ -25,6 +25,12 @@ install role:
 ansible-galaxy install do1jlr.ranger
 ```
 
+You can execute the role **directly via ansible ad-hoc command**, but it is highly recomended to create a ansible playbook
+```bash
+# example ad-hoc command
+ansible -m include_role -a "name=do1jlr.ranger" localhost
+```
+
 Example Ansible-Playbook:
 ```yml
 ---
@@ -33,13 +39,8 @@ Example Ansible-Playbook:
   - do1jlr.ranger
 ```
 
-You can execute the role directly via ansible ad-hoc commands, but it is highly recomended to create a ansible playbook
-```bash
-# example ad-hoc command
-ansible -m include_role -a "name=do1jlr.ranger" localhost
-```
 
-### use directly
+### use via git command
 
 clone github repo:
 ```bash
