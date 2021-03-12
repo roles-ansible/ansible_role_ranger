@@ -1,6 +1,6 @@
 ---
 # versionscheck
-playbook_version_number: 1027 # should be over ninethousand
+playbook_version_number: 1028  # should be int
 playbook_version_path: 'role-ranger_roles-ansible_github.com.version'
 
 # variables for ranger
