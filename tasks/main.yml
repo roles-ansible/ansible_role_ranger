@@ -1,18 +1,20 @@
 ---
 - name: combine ranger configuration
-  set_fact:
+  ansible.builtin.set_fact:
     ranger: "{{ _ranger|combine(ranger, recursive=True) }}"
 
-- include_tasks: versioncheck.yml
+- name: run optional versionscheck
+  ansible.builtin.include_tasks: versioncheck.yml
   when: submodules_versioncheck|bool
 
 - name: install ranger
-  become: yes
-  package:
+  become: true
+  ansible.builtin.package:
     name: ranger
     state: present
   register: install_ranger
-  ignore_errors: yes
+  ignore_errors: true
 
-- include_tasks: compile_ranger.yml
+- name: compile ranger if install failed
+  ansible.builtin.include_tasks: compile_ranger.yml
   when: install_ranger.failed

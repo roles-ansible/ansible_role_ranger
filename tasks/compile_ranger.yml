@@ -1,13 +1,13 @@
 ---
 - name: download ranger git repo
-  git:
+  ansible.builtin.git:
     repo: "{{ ranger.repo }}"
     dest: "{{ ranger.download_directory }}"
     version: "{{ ranger.branch }}"
 
 - name: install build packages
   become: true
-  package:
+  ansible.builtin.package:
     name:
       - make
       - git
@@ -15,23 +15,23 @@
     state: present
 
 - name: Run 'install' target as root
-  become: yes
-  make:
+  become: true
+  community.general.make:
     chdir: "{{ ranger.download_directory }}"
     target: install
   when: ansible_python_version[:1] == '3'
 
 - name: install python3
   become: true
-  package:
+  ansible.builtin.package:
     name: python3
     state: present
   register: install_python3
-  ignore_errors: yes
+  ignore_errors: true
 
 - name: install ranger with python3
-  become: yes
-  command: python3 setup.py install --optimize=1
+  become: true
+  ansible.builtin.command: python3 setup.py install --optimize=1
   args:
     chdir: "{{ ranger.download_directory }}"
     creates: '/usr/local/bin/ranger'
@@ -39,7 +39,7 @@
 
 - name: install legacy-python f00
   become: true
-  package:
+  ansible.builtin.package:
     name:
       - python
       - python-setuptools
@@ -47,8 +47,8 @@
   when: install_python3.failed
 
 - name: install ranger with legacy-python
-  become: yes
-  command: python setup.py install --optimize=1
+  become: true
+  ansible.builtin.command: python setup.py install --optimize=1
   args:
     chdir: "{{ ranger.download_directory }}"
     creates: '/usr/local/bin/ranger'
