@@ -1,4 +1,4 @@
-[![Ansible Galaxy](https://raw.githubusercontent.com/roles-ansible/ansible_role_ranger/master/.github/galaxy.svg?sanitize=true)](https://galaxy.ansible.com/do1jlr/ranger) [![Build Status](https://travis-ci.com/roles-ansible/ansible_role_ranger.svg?branch=master)](https://travis-ci.com/roles-ansible/ansible_role_ranger) [![MIT License](https://raw.githubusercontent.com/roles-ansible/ansible_role_ranger/master/.github/license.svg?sanitize=true)](https://github.com/roles-ansible/ansible_role_ranger/blob/master/LICENSE)
+[![Ansible Galaxy](https://raw.githubusercontent.com/roles-ansible/ansible_role_ranger/master/.github/galaxy.svg?sanitize=true)](https://galaxy.ansible.com/do1jlr/ranger) [![MIT License](https://raw.githubusercontent.com/roles-ansible/ansible_role_ranger/master/.github/license.svg?sanitize=true)](https://github.com/roles-ansible/ansible_role_ranger/blob/master/LICENSE)
 
 
  ansible_role_ranger
@@ -59,8 +59,7 @@ example Playbook:
     submodules_versioncheck: true
 ```
 
- Testing
-----------
+## Testing
 This role is tested with [these github-action](https://github.com/search?q=topic%3Acheck-ansible+topic%3Agithub-actions+org%3Aroles-ansible&type=Repositories) tests for different versions of differen linux systems. Linting is tested via travis-ci and the  [ansible-lint action](https://github.com/marketplace/actions/ansible-lint).
 If you want to find out more about our tests, please have a look at the github marketplace.
 
