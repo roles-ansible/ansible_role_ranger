@@ -8,10 +8,7 @@
 - name: install build packages
   become: true
   ansible.builtin.package:
-    name:
-      - make
-      - git
-      - vim
+    name: "{{ ranger__build_deps }}"
     state: present
 
 - name: Run 'install' target as root
