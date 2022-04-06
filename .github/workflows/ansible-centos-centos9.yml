@@ -1,0 +1,20 @@
+---
+name: Ansible check centos:stream9  # feel free to pick your own name
+
+# yamllint disable-line rule:truthy
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Important: This sets up your GITHUB_WORKSPACE environment variable
+      - name: checkout git repo
+        uses: actions/checkout@v3
+
+      - name: ansible check with quay.io/centos/centos:stream9
+        # optionally replace "main" with any valid git ref
+        uses: roles-ansible/check-ansible-centos-centos9-action@main
+        with:
+          targets: "./"
