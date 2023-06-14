@@ -1,9 +1,9 @@
 ---
-- name: combine ranger configuration
+- name: Combine ranger configuration
   ansible.builtin.set_fact:
-    ranger: "{{ _ranger|combine(ranger, recursive=True) }}"
+    ranger: "{{ _ranger | combine(ranger, recursive=True) }}"
 
-- name: run optional versionscheck
+- name: Run optional versionscheck
   ansible.builtin.include_tasks: versioncheck.yml
   when: submodules_versioncheck|bool
 
@@ -14,7 +14,7 @@
     update_cache: true
   when: ansible_pkg_mgr == "apt"
 
-- name: install ranger
+- name: Install ranger
   become: true
   ansible.builtin.package:
     name: ranger
@@ -22,6 +22,6 @@
   register: install_ranger
   ignore_errors: true
 
-- name: compile ranger if install failed
+- name: Compile ranger if install failed
   ansible.builtin.include_tasks: compile_ranger.yml
   when: install_ranger.failed
