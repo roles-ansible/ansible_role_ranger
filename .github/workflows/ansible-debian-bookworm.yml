@@ -1,0 +1,21 @@
+---
+name: Ansible check debian:bookworm  # feel free to pick your own name
+
+# yamllint disable-line rule:truthy
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Important: This sets up your GITHUB_WORKSPACE environment variable
+      - name: Checkout git repo
+        uses: actions/checkout@v3
+
+      - name: ansible check with debian:bookworm
+        # optionally replace "v1" with any valid git ref (branch, release, commit...)
+        uses: roles-ansible/check-ansible-debian-latest-action@v1
+        with:
+          targets: "/github/workspace"
