@@ -3,23 +3,25 @@ galaxy_info:
   author: do1jlr
   description: Ansible role to install the ranger file manager on linux. ranger is a console file manager with VI key bindings.
   role_name: ranger
+  namespace: l3d
   license: MIT
-  min_ansible_version: 2.8
+  min_ansible_version: '2.13'
   github_branch: main
   platforms:
-    - name: Archlinux
-      versions: all
+    - name: ArchLinux
+      versions: ['all']
     - name: Debian
-      versions: all
+      versions: ['all']
     - name: Ubuntu
-      versions: all
+      versions: ['all']
     - name: Fedora
-      versions: all
+      versions: ['all']
     - name: EL
-      versions: all
+      versions: ['all']
   galaxy_tags:
     - ranger
     - filemanager
     - cli
     - console
+    - linux
 dependencies: []
