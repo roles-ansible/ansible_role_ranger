@@ -34,7 +34,7 @@ Example Ansible-Playbook:
 ---
 - hosts: localhost
   roles:
-  - do1jlr.ranger
+    - {role: do1jlr.ranger, tags: ranger}
 ```
 
 ### use via git command
@@ -48,11 +48,7 @@ example Playbook:
 ---
 - hosts: localhost
   roles:
-    - ansible_role_ranger
-  tags:
-   - ranger
-  vars:
-    submodules_versioncheck: true
+    - {role: ansible_role_ranger, tags: ranger}
 ```
 
 ## Requirements
