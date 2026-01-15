@@ -13,7 +13,7 @@
   ansible.builtin.apt:
     cache_valid_time: 3600
     update_cache: true
-  when: ansible_pkg_mgr == "apt"
+  when: ansible_facts['pkg_mgr'] == "apt"
 
 - name: Install ranger
   block:
